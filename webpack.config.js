@@ -5,7 +5,7 @@ const webpack = require('webpack');
 module.exports={
   entry:{
     app:'./src/index.js',
-    'production-dependencies': ['phaser']
+    // 'production-dependencies': ['phaser']
   },
   output:{
     filename:'app.bundle.js',
@@ -45,9 +45,9 @@ module.exports={
       'typeof CANVAS_RENDERER': JSON.stringify(true),
       'typeof WEBGL_RENDERER': JSON.stringify(true)
     }),
-    new webpack.optimize.CommonsChunkPlugin({
-      name: 'production-dependencies',
-      filename: 'production-dependencies.bundle.js'
-    }),
+    // new webpack.optimize.CommonsChunkPlugin({
+    //   name: 'production-dependencies',
+    //   filename: 'production-dependencies.bundle.js'
+    // }),
   ]
 }
