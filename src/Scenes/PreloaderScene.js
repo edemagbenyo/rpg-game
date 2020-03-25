@@ -17,7 +17,7 @@ export default class extends Phaser.Scene {
   }
   preload() {
     // add logo image
-    this.add.image(400, 200, "logo");
+    this.add.image(500, 200, "logo");
 
     // display progress bar
     var progressBar = this.add.graphics();
@@ -89,12 +89,16 @@ export default class extends Phaser.Scene {
     this.timedEvent = this.time.delayedCall(500, this.ready, [], this);
 
     // load assets needed in our game
-    this.load.image("blueButton1", "assets/ui/blue_button02.png");
-    this.load.image("blueButton2", "assets/ui/blue_button03.png");
+    this.load.image("blueButton1", "assets/graphics/ui/blue_button02.png");
+    this.load.image("blueButton2", "assets/graphics/ui/blue_button03.png");
 
-    this.load.image("phaserLogo", "assets/logo.png");
-    this.load.image("box", "assets/ui/grey_box.png");
-    this.load.image("checkedBox", "assets/ui/blue_boxCheckmark.png");
-    this.load.audio("bgMusic", ["assets/TownTheme.mp3"]);
+    this.load.image("phaserLogo", "assets/graphics/logo.png");
+    this.load.image("box", "assets/graphics/ui/grey_box.png");
+    this.load.image("checkedBox", "assets/graphics/ui/blue_boxCheckmark.png");
+    this.load.audio("bgMusic", ["assets/music/TownTheme.mp3"]);
+
+    //Loading my assets
+    this.load.image("menu","assets/graphics/menu.png")
+    this.load.image("night","assets/graphics/night.png")
   }
 }

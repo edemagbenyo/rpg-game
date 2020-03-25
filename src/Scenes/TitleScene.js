@@ -7,6 +7,7 @@ export default class extends Phaser.Scene {
   }
 
   create() {
+    this.add.image(400, 300, 'menu');
     // SetInteractive: By making a sprite interactive, Phaser will fire different events when
     // the player interacts with that object. Some of these events include when a player mouses
     // over an object or when they click on it.
