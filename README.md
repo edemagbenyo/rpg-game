@@ -57,4 +57,11 @@ gt.wav
 will be played when the player moves to gt level
 
 
+Credits:
 
+Graphics
+Full moon image: Alekei
+Main Character: bevouliin.com
+
+Sounds
+Heroic Demise : Matthew Pablo
