@@ -86,7 +86,7 @@ export default class extends Phaser.Scene {
       }.bind(this)
     );
 
-    this.timedEvent = this.time.delayedCall(3000, this.ready, [], this);
+    this.timedEvent = this.time.delayedCall(500, this.ready, [], this);
 
     // load assets needed in our game
     this.load.image("blueButton1", "assets/ui/blue_button02.png");
