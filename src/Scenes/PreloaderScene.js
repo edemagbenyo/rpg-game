@@ -17,7 +17,7 @@ export default class extends Phaser.Scene {
   }
   preload() {
     // add logo image
-    this.add.image(500, 200, "logo");
+    this.add.image(400, 200, "logo");
 
     // display progress bar
     var progressBar = this.add.graphics();
@@ -100,5 +100,10 @@ export default class extends Phaser.Scene {
     //Loading my assets
     this.load.image("menu","assets/graphics/menu.png")
     this.load.image("night","assets/graphics/night.png")
+    this.load.image("ground","assets/graphics/platform.png")
+    this.load.spritesheet('player',
+        'assets/graphics/player/dude.png',
+        { frameWidth: 32, frameHeight: 48 }
+      );
   }
 }
