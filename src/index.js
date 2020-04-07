@@ -6,14 +6,15 @@ import CreditsScene from './Scenes/CreditsScene';
 import PreloaderScene from './Scenes/PreloaderScene';
 import BootScene from './Scenes/BootScene';
 import OptionsScene from './Scenes/OptionsScene';
- import Model from "./Model";
+import Model from './Model';
+
 class Game extends Phaser.Game {
-  constructor () {
+  constructor() {
     super(config);
     const model = new Model();
-    // By adding the model instance to a property on our Phaser Game Object, 
+    // By adding the model instance to a property on our Phaser Game Object,
     // we are now able to access that model in our Scenes by calling this.sys.game.globals.model.
-    this.globals = {model, bgMusic:null}
+    this.globals = { model, bgMusic: null };
     this.scene.add('Boot', BootScene);
     this.scene.add('Preloader', PreloaderScene);
     this.scene.add('Title', TitleScene);
@@ -22,7 +23,6 @@ class Game extends Phaser.Game {
     this.scene.add('Game', GameScene);
     this.scene.start('Boot');
   }
-  
 }
- 
+
 window.game = new Game();
