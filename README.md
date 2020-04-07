@@ -1,6 +1,11 @@
 # rpg-game
-Sedemamia
-
+Sedemania
+<!--- These are examples. See https://shields.io for others or to customize this set of shields. You might want to include dependencies, project status and licence info here --->
+![GitHub repo size](https://img.shields.io/github/repo-size/edemagbenyo/rpg-game)
+![GitHub contributors](https://img.shields.io/github/contributors/edemagbenyo/rpg-game)
+![GitHub stars](https://img.shields.io/github/stars/edemagbenyo/rpg-game?style=social)
+![GitHub forks](https://img.shields.io/github/forks/edemagbenyo/rpg-game?style=social)
+![Twitter Follow](https://img.shields.io/twitter/follow/edemagbenyo?style=social)
 
 ## Overview
 Sedemamia is single player turn based game. The game is intended to test how fast the player can think and swerve obstacles.
@@ -56,8 +61,53 @@ will be played when the user fires a fire
 gt.wav
 will be played when the player moves to gt level
 
+## Prerequisites
 
-Credits:
+Before you begin, ensure you have met the following requirements:
+<!--- These are just example requirements. Add, duplicate or remove as required --->
+* You have installed the latest version of `nodejs`
+* You have a `<Windows/Linux/Mac>` machine.
+
+## Installing weather app
+
+To install weather app, follow these steps:
+
+1. Clone the project
+```
+git clone git@github.com:edemagbenyo/rpg-game.git
+```
+
+## Using Sedemania Game
+
+To use Sedemania Game, follow these steps:
+
+1. Enter a city name
+2. Hit the search button
+
+## Contributing to Sedemania Game
+<!--- If your README is long or you have some specific process or steps you want contributors to follow, consider creating a separate CONTRIBUTING.md file--->
+To contribute to the Sedemania Game, follow these steps:
+
+1. Fork this repository.
+2. Create a branch: `git checkout -b feature/awesome_branch`.
+3. Make your changes and commit them: `git commit -m 'awesome message'`
+4. Push to the original branch: `git push origin feature/awesome_branch`
+5. Create the pull request.
+
+Alternatively see the GitHub documentation on [creating a pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
+
+## Contributors
+
+Thanks to the following people who have contributed to this project:
+
+* [@edemagbenyo](https://github.com/edemagbenyo) 📖
+
+
+## Contact
+
+If you want to contact me you can reach me at <edem.agbenyo@gmail.com>.
+
+## Credits
 
 Graphics
 Full moon image: Alekei
@@ -65,3 +115,8 @@ Main Character: bevouliin.com
 
 Sounds
 Heroic Demise : Matthew Pablo
+
+## License
+<!--- If you're not sure which open license to use see https://choosealicense.com/--->
+
+This project uses the following license: [MIT](<link>).
