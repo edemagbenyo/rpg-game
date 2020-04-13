@@ -12,7 +12,7 @@ export default class GameScene extends Phaser.Scene {
       },
     });
 
-    // this.player = null;
+    this.player = null;
   }
 
   preload() {

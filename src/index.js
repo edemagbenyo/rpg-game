@@ -21,6 +21,8 @@ class Game extends Phaser.Game {
     this.scene.add('Options', OptionsScene);
     this.scene.add('Credits', CreditsScene);
     this.scene.add('Game', GameScene);
+
+    //Start the app with the boot scene
     this.scene.start('Boot');
   }
 }

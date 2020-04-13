@@ -81,8 +81,10 @@ git clone git@github.com:edemagbenyo/rpg-game.git
 
 To use Sedemania Game, follow these steps:
 
-1. Enter a city name
-2. Hit the search button
+1. Choose "Play" to start the game
+2. Choose "Options" to change the game settings
+3. Choose "Credits" to read on the credits
+
 
 ## Contributing to Sedemania Game
 <!--- If your README is long or you have some specific process or steps you want contributors to follow, consider creating a separate CONTRIBUTING.md file--->
