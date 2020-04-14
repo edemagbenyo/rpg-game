@@ -1,30 +1,39 @@
-import 'phaser';
+import "phaser";
 
 export default class GameScene extends Phaser.Scene {
   constructor() {
-    super({
-      physics: {
-        default: 'arcade',
-        arcade: {
-          gravity: { y: 300 },
-          debug: false,
-        },
-      },
-    });
+    // super({
+    //   type: Phaser.AUTO,
+    //   parent: "phaser-example",
+    //   width: 800,
+    //   height: 600,
+    //   physics: {
+    //     default: "arcade",
+    //     arcade: {
+    //       gravity: { y: 300 },
+    //       debug: false,
+    //     },
+    //   },
+    // });
+    super('Game')
 
-    this.player = null;
+    // this.player = null;
   }
 
   preload() {
     // load images
-    // this.load.image('logo', 'assets/cokecan.png');
+    // this.load.spritesheet('player', 'assets/graphics/player/dude.png',{ frameWidth: 32, frameHeight: 48 });
+    // this.load.image('star', 'assets/graphics/star.png');
+    this.load.spritesheet("player", "assets/graphics/player/dude.png", {
+      frameWidth: 32,
+      frameHeight: 48,
+    });
   }
 
   create() {
-    this.add.image(400, 500, 'night');
+    this.add.image(400, 500, "night");
 
     this.platforms = this.physics.add.staticGroup();
-
     this.platforms.create(400, 568, 'ground').setScale(2).refreshBody();
 
     this.platforms.create(600, 400, 'ground');
@@ -32,7 +41,6 @@ export default class GameScene extends Phaser.Scene {
     this.platforms.create(750, 220, 'ground');
 
     this.player = this.physics.add.image(100, 450, 'player');
-
     this.player.setBounce(0.2);
     this.player.setCollideWorldBounds(true);
 
@@ -56,10 +64,10 @@ export default class GameScene extends Phaser.Scene {
       repeat: -1,
     });
 
-    // Assign the directional keyboards
+    // // Assign the directional keyboards
     this.cursors = this.input.keyboard.createCursorKeys();
 
-    this.physics.add.collider(this.player, this.platforms);
+    // this.physics.add.collider(this.player, this.platforms);
     // this.physics.add.collider(stars, platforms);
     // this.physics.add.collider(stars, player);
     // this.physics.add.overlap(this.player, stars, collectStar, null, this);
@@ -69,15 +77,15 @@ export default class GameScene extends Phaser.Scene {
     if (this.cursors.left.isDown) {
       this.player.setVelocityX(-160);
 
-      this.player.anims.play('left', true);
+      this.player.anims.play("left", true);
     } else if (this.cursors.right.isDown) {
       this.player.setVelocityX(160);
 
-      this.player.anims.play('right', true);
+      this.player.anims.play("right", true);
     } else {
       this.player.setVelocityX(0);
 
-      this.player.anims.play('turn');
+      this.player.anims.play("turn");
     }
 
     if (this.cursors.up.isDown && this.player.body.touching.down) {

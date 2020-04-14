@@ -103,8 +103,8 @@ export default class extends Phaser.Scene {
     this.load.image('menu', 'assets/graphics/menu.png');
     this.load.image('night', 'assets/graphics/night.png');
     this.load.image('ground', 'assets/graphics/platform.png');
-    this.load.spritesheet('player',
-      'assets/graphics/player/dude.png',
-      { frameWidth: 32, frameHeight: 48 });
+    // this.load.spritesheet('player',
+    //   'assets/graphics/player/dude.png',
+    //   { frameWidth: 32, frameHeight: 48 });
   }
 }
