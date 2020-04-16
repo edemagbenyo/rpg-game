@@ -2,21 +2,27 @@ import "phaser";
 
 export default class GameScene extends Phaser.Scene {
   constructor() {
-    // super({
+    super({
     //   type: Phaser.AUTO,
     //   parent: "phaser-example",
     //   width: 800,
     //   height: 600,
-    //   physics: {
-    //     default: "arcade",
+      physics: {
+        default: "arcade",
+        arcade: {
+          gravity: { y: 300 },
+          debug: false,
+        },
+      },
+    });
+    // super('Game')
+    // this.physics={
+    //   default: "arcade",
     //     arcade: {
     //       gravity: { y: 300 },
     //       debug: false,
     //     },
-    //   },
-    // });
-    super('Game')
-
+    // }
     // this.player = null;
   }
 
@@ -32,7 +38,7 @@ export default class GameScene extends Phaser.Scene {
 
   create() {
     this.add.image(400, 500, "night");
-
+    console.log(this.physics);
     this.platforms = this.physics.add.staticGroup();
     this.platforms.create(400, 568, 'ground').setScale(2).refreshBody();
 
@@ -40,7 +46,7 @@ export default class GameScene extends Phaser.Scene {
     this.platforms.create(50, 250, 'ground');
     this.platforms.create(750, 220, 'ground');
 
-    this.player = this.physics.add.image(100, 450, 'player');
+    this.player = this.physics.add.sprite(100, 450, 'player');
     this.player.setBounce(0.2);
     this.player.setCollideWorldBounds(true);
 
@@ -67,7 +73,7 @@ export default class GameScene extends Phaser.Scene {
     // // Assign the directional keyboards
     this.cursors = this.input.keyboard.createCursorKeys();
 
-    // this.physics.add.collider(this.player, this.platforms);
+    this.physics.add.collider(this.player, this.platforms);
     // this.physics.add.collider(stars, platforms);
     // this.physics.add.collider(stars, player);
     // this.physics.add.overlap(this.player, stars, collectStar, null, this);
