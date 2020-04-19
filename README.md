@@ -23,7 +23,7 @@ At each diffents level, the player will be a set of moving obstacles(flying bird
 ## Story and Gameplay
 
 ### Story
-A player(Sedem) is on the quest to save the world from the tyrant grand trotro(GT) who has brought darkness to the people of Seduland. In order to get to GT and restore brightness, Sedem needs to collect as much as possible amunition for the fight. He must also die 3 times before he can get to the GT. Collecting the stars is not as easy as it sounds as there are flying birds that are constantly blocking the way and trying to eat Sedem so he can get to GT and get finish. Once the 
+A player(Sedem) is on the quest to save the world from the tyrant grand trotro(GT) who has brought darkness to the people of Seduland. In order to get to GT and restore brightness, Sedem needs to collect as much as possible amunition for the fight. He must reach the 3rd level before he can get to fight GT. Collecting the stars is not as easy as it sounds as there are flying birds that are constantly blocking the way and trying to eat Sedem so he cannot get to GT and get finish. In order to get to a superior level, Sedem must collect a minimum number of stars(the number doubles at each level).
 
 ### Gameplay
 Player uses the direction keys( up: to jump and move to upper blocks, down: to move down in a faster way, left: to move left, right: to move right).
