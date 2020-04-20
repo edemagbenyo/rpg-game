@@ -8,7 +8,7 @@ Sedemania
 ![Twitter Follow](https://img.shields.io/twitter/follow/edemagbenyo?style=social)
 
 ## Overview
-Sedemamia is single player turn based game. The game is intended to test how fast the player can think and swerve obstacles.
+[Sedemamia](https://sedemania.netlify.app/) is single player turn based game. The game is intended to test how fast the player can think and swerve obstacles.
 The game is made up of 5 level and final level where you have to defeat the grand trotro.
 In the first five level, the user must collect as much as starts possible. The collected stars will be used in the fight with the grand trotro at the end of the 3 lives. 
 Regardless of number of stars collected, any player who exhaust all the 3 lives will be sent to face the grand trotro.

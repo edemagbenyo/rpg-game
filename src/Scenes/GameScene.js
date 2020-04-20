@@ -1,4 +1,5 @@
 import "phaser";
+import ScoreBoard from "../Objects/ScoreBoard";
 
 export default class GameScene extends Phaser.Scene {
   constructor() {
@@ -11,6 +12,8 @@ export default class GameScene extends Phaser.Scene {
         },
       },
     });
+    this.stars = 39
+    this.ScoreBoard = new ScoreBoard(0,this.stars+1)
   }
 
   preload() {
@@ -20,6 +23,7 @@ export default class GameScene extends Phaser.Scene {
       frameWidth: 32,
       frameHeight: 48,
     });
+
   }
   hitBomb() {
     this.physics.pause();
@@ -32,7 +36,10 @@ export default class GameScene extends Phaser.Scene {
   }
   collectStar(player, star) {
     star.disableBody(true, true);
-    if(this.stars.countActive(false)%5==0){
+    this.ScoreBoard.score+=1
+    // this.ScoreBoard.displayBoard()
+
+    if (this.stars.countActive(false) % 5 == 0) {
       var x =
         player.x < 400
           ? Phaser.Math.Between(400, 800)
@@ -43,7 +50,6 @@ export default class GameScene extends Phaser.Scene {
       bomb.setVelocity(Phaser.Math.Between(-200, 200), 20);
     }
     if (this.stars.countActive(true) === 0) {
-      console.log("new starsss");
       this.stars.children.iterate(function (child) {
         child.enableBody(true, child.x, 0, true, true);
       });
@@ -56,11 +62,11 @@ export default class GameScene extends Phaser.Scene {
   //     bomb.setVelocity(Phaser.Math.Between(-200, 200), 20);
   // }
   createStars(starsCount) {
-    const yAxis=Phaser.Math.RND.between(100,500)
+    const yAxis = Phaser.Math.RND.between(100, 500);
     this.stars = this.physics.add.group({
       key: "star",
       repeat: starsCount,
-      setXY: { x: 12, y:yAxis, stepX: 50 },
+      setXY: { x: 12, y: yAxis, stepX: 50 },
     });
 
     this.stars.children.iterate(function (child) {
@@ -72,7 +78,7 @@ export default class GameScene extends Phaser.Scene {
 
   createPlatform(platformsCount = 10) {
     this.platforms = this.physics.add.staticGroup();
-    
+
     this.platforms.create(800, 1000, "ground").setScale(5).refreshBody();
 
     this.platforms.create(300, 290, "ground");
@@ -87,6 +93,10 @@ export default class GameScene extends Phaser.Scene {
   }
 
   create() {
+    //Create score
+
+    this.ScoreBoard.displayBoard()
+
     this.mainbg = this.add.image(400, 500, "night");
     this.createPlatform();
     this.player = this.physics.add.sprite(400, 450, "player");
@@ -112,15 +122,12 @@ export default class GameScene extends Phaser.Scene {
       repeat: -1,
     });
 
-    this.createStars(25);
-    this.scoreText = this.bitmapText(16,16,0,'Score: 0')
-    // this.add.text(0, 0, 'score: 0', { fontSize: '32px', fill: '#000' });
-    Phaser.Display.Align.In.Center(this.scoreText,this.add.zone(15,15,300,300))
-    // this.createStars(200,200);
+    this.createStars(this.stars);
+
     //Set the limits of the world where we play
-    this.physics.world.bounds.width=2000;
-    this.physics.world.bounds.height=1200;
-    this.player.setCollideWorldBounds(true)
+    this.physics.world.bounds.width = this.mainbg.width / 2 - 200;
+    this.physics.world.bounds.height = this.mainbg.height / 2;
+    this.player.setCollideWorldBounds(true);
     // // Assign the directional keyboards
     this.cursors = this.input.keyboard.createCursorKeys();
     this.bombs = this.physics.add.group();
@@ -147,13 +154,13 @@ export default class GameScene extends Phaser.Scene {
     this.cameras.main.setBounds(
       0,
       0,
-      this.mainbg.width / 2,
+      this.mainbg.width / 2 - 200,
       this.mainbg.height / 2
     );
     this.cameras.main.startFollow(this.player);
     this.cameras.main.roundPixels = true;
 
-
+    console.log(this.cameras);
   }
 
   update() {
