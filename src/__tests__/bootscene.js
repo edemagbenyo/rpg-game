@@ -1,5 +1,5 @@
-describe("Boot scene",()=>{
-  it("loads the logo image for display",()=>{
-    
-  })
-})
+describe('Boot scene', () => {
+  it('loads the logo image for display', () => {
+
+  });
+});
