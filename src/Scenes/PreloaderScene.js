@@ -1,4 +1,4 @@
-import 'phaser';
+import Phraser from 'phaser';
 
 export default class extends Phaser.Scene {
   constructor() {

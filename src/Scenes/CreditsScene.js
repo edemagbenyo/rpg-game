@@ -1,4 +1,4 @@
-import 'phaser';
+import Phraser from 'phaser';
 import config from '../Config/config';
 
 export default class extends Phaser.Scene {

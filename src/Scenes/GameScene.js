@@ -1,4 +1,4 @@
-import 'phaser';
+import Phraser from 'phaser';
 import ScoreBoard from '../Objects/ScoreBoard';
 
 export default class GameScene extends Phaser.Scene {
