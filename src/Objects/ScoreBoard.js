@@ -22,7 +22,7 @@ export default class {
   set score(score) {
     this._score = score;
     this.labelScore.textContent = `${this._score} / ${this._stars}`;
-    this.LeaderBoard.setScoreLeaderBoard(this.playerName, score);
+    //this.LeaderBoard.setScoreLeaderBoard(this.playerName, score);
   }
   get score() {
     return Number(this._score);
@@ -89,7 +89,7 @@ export default class {
       errorPlayerNameInput.textContent = "";
       if (await this.LeaderBoard.nameExistLeaderBoard(nameInput.value)) {
         errorPlayerNameInput.style = "color:red";
-        errorPlayerNameInput.textContent = "Name already exists";
+        errorPlayerNameInput.textContent = "Name already taken";
       } else {
         this.labelPlayerName.textContent = nameInput.value;
         localStorage.setItem("playerName", nameInput.value);

@@ -1,6 +1,6 @@
 export default class {
   constructor() {
-    this._gameId = "pk5YSrq2RrbFJYHrVRwB";
+    this._gameId = "Bkzv4v95qmpFJOVsmS1p";
   }
   async getLeaderBoard() {
     return await (

@@ -7,7 +7,12 @@
     "build": "webpack --mode production",
     "watch": "webpack --watch --mode development",
     "start": "webpack-dev-server --open",
-    "test": "jest --watch test/*.test.js"
+    "test": "jest --watch"
+  },
+  "babel": {
+    "presets": [
+      "env"
+    ]
   },
   "repository": {
     "type": "git",
@@ -29,7 +34,7 @@
     "eslint": "^6.8.0",
     "eslint-config-airbnb-base": "^14.1.0",
     "eslint-plugin-import": "^2.20.2",
-    "jest": "^25.2.7",
+    "jest": "^20.0.4",
     "webpack": "^4.42.0",
     "webpack-cli": "^3.3.11",
     "webpack-dev-server": "^3.10.3"

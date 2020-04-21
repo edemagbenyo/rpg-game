@@ -77,7 +77,7 @@ export default class GameScene extends Phaser.Scene {
     // this.stars = Object.assign({},this.stars,stars)
   }
 
-  createPlatform(platformsCount = 10) {
+  createPlatform() {
     this.platforms = this.physics.add.staticGroup();
 
     this.platforms.create(800, 1000, "ground").setScale(5).refreshBody();
