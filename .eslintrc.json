@@ -16,6 +16,7 @@
       "arrow-parens": "off",
       "no-underscore-dangle":"off",
       "no-unused-expressions":"off",
-      "class-methods-use-this":"off"
+      "class-methods-use-this":"off",
+      "import/no-unresolved":"off"
     }
   }
