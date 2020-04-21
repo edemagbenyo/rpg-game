@@ -1,4 +1,4 @@
-import Phraser from 'phaser';
+import Phaser from 'phaser';
 import ScoreBoard from '../Objects/ScoreBoard';
 
 export default class GameScene extends Phaser.Scene {
@@ -13,7 +13,7 @@ export default class GameScene extends Phaser.Scene {
       },
     });
     this.starsCount = 29;
-    this.ScoreBoard = new ScoreBoard(0, this.starsCount+1);
+    this.ScoreBoard = new ScoreBoard(0, this.starsCount + 1);
   }
 
   preload() {

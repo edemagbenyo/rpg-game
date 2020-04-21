@@ -1,4 +1,4 @@
-import Phraser from 'phaser';
+import Phaser from 'phaser';
 import Button from '../Objects/Button';
 
 export default class extends Phaser.Scene {
