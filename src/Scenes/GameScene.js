@@ -12,8 +12,8 @@ export default class GameScene extends Phaser.Scene {
         },
       },
     });
-    this.stars = 39
-    this.ScoreBoard = new ScoreBoard(0,this.stars+1)
+    this.starsCount = 5
+    this.ScoreBoard = new ScoreBoard(0,this.starsCount)
   }
 
   preload() {
@@ -50,6 +50,7 @@ export default class GameScene extends Phaser.Scene {
       bomb.setVelocity(Phaser.Math.Between(-200, 200), 20);
     }
     if (this.stars.countActive(true) === 0) {
+      this.stars.children.size=5
       this.stars.children.iterate(function (child) {
         child.enableBody(true, child.x, 0, true, true);
       });
@@ -122,7 +123,7 @@ export default class GameScene extends Phaser.Scene {
       repeat: -1,
     });
 
-    this.createStars(this.stars);
+    this.createStars(this.starsCount);
 
     //Set the limits of the world where we play
     this.physics.world.bounds.width = this.mainbg.width / 2 - 200;

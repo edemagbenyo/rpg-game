@@ -3,10 +3,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 const webpack = require('webpack');
 
 module.exports={
-  entry:{
-    app:'./src/index.js',
-    // 'production-dependencies': ['phaser']
-  },
+  entry:['babel-polyfill','./src/index.js'],
   output:{
     filename:'app.bundle.js',
     path: path.resolve(__dirname,'build')
