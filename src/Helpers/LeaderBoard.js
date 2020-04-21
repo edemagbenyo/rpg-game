@@ -4,21 +4,20 @@ export default class {
   }
 
   async getLeaderBoard() {
-    return await (
-      await fetch(
-        `https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${this._gameId}/scores`,
-      )
-    ).json();
+    return fetch(
+      `https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${this._gameId}/scores`,
+
+    );
   }
 
   async nameExistLeaderBoard(playerName) {
-    const playersNames = await this.getLeaderBoard();
-    const found = playersNames.result.find(i => i.user == playerName);
+    const playersNames = await (await this.getLeaderBoard()).json();
+    const found = playersNames.result.find(i => i.user === playerName);
     return found;
   }
 
   async setScoreLeaderBoard(user, score) {
-    return await fetch(
+    return fetch(
       `https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${this._gameId}/scores`,
       {
         method: 'POST',

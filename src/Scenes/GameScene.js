@@ -40,7 +40,7 @@ export default class GameScene extends Phaser.Scene {
     this.ScoreBoard.score += 1;
     // this.ScoreBoard.displayBoard()
 
-    if (this.stars.countActive(false) % 5 == 0) {
+    if (this.stars.countActive(false) % 5 === 0) {
       const x = player.x < 400
         ? Phaser.Math.Between(400, 800)
         : Phaser.Math.Between(0, 400);
@@ -74,7 +74,6 @@ export default class GameScene extends Phaser.Scene {
     this.stars.children.iterate((child) => {
       child.setBounceY(Phaser.Math.FloatBetween(0.4, 0.8));
     });
-    console.log(this.stars);
     // this.stars = Object.assign({},this.stars,stars)
   }
 
@@ -161,8 +160,6 @@ export default class GameScene extends Phaser.Scene {
     );
     this.cameras.main.startFollow(this.player);
     this.cameras.main.roundPixels = true;
-
-    console.log(this.cameras);
   }
 
   update() {

@@ -23,7 +23,7 @@ export default class extends Phaser.Scene {
 
     this.gameButton.on(
       'pointerdown',
-      (pointer) => {
+      () => {
         this.scene.start('Game');
       },
     );
@@ -42,7 +42,7 @@ export default class extends Phaser.Scene {
 
     this.optionsButton.on(
       'pointerdown',
-      (pointer) => {
+      () => {
         this.scene.start('Options');
       },
     );
@@ -61,7 +61,7 @@ export default class extends Phaser.Scene {
 
     this.creditsButton.on(
       'pointerdown',
-      (pointer) => {
+      () => {
         this.scene.start('Credits');
       },
     );

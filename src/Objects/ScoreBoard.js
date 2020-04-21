@@ -51,12 +51,12 @@ export default class {
     const h3 = document.createElement('h3');
     h3.textContent = 'Leaderboard';
     try {
-      const players = await this.LeaderBoard.getLeaderBoard();
+      const players = await (await this.LeaderBoard.getLeaderBoard()).json();
 
       const list = players.result
         .sort((a, b) => b.score - a.score)
         .map((player) => `<li style=" border: 1px solid #FFFFFF; padding: 2px; ${
-          localStorage.getItem('playerName') == player.user
+          localStorage.getItem('playerName') === player.user
             ? 'background:#5999BB; color:white'
             : '-'
         }" >${player.user} - ${player.score}`);
