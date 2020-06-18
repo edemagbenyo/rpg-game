@@ -49,16 +49,16 @@ Scoring system: Player gets a point for collecting a start and for killing a bir
 ### Audio
 #### Sounds, voiceover, music
 sound1.mp3
-it will be playing repeatedly throughout the first 5 levels
+It will be playing repeatedly throughout the first 5 levels
 
 block.wav
-will be played when the user shoots a block
+It will be played when the user shoots a block
 
 fire.wav
-will be played when the user fires a fire
+It will be played when the user fires a fire
 
 gt.wav
-will be played when the player moves to gt level
+It will be played when the player moves to gt level
 
 ## Prerequisites
 
@@ -115,7 +115,7 @@ Full moon image: Alekei
 Main Character: bevouliin.com
 
 Sounds
-Heroic Demise : Matthew Pablo
+Heroic Demise: Matthew Pablo
 
 ## License
 <!--- If you're not sure which open license to use see https://choosealicense.com/--->
