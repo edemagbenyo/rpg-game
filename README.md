@@ -7,6 +7,7 @@ Sedemania
 ![GitHub forks](https://img.shields.io/github/forks/edemagbenyo/rpg-game?style=social)
 ![Twitter Follow](https://img.shields.io/twitter/follow/edemagbenyo?style=social)
 
+
 ## Overview
 [Sedemamia](https://sedemania.netlify.app/) is single player turn based game. The game is intended to test how fast the player can think and swerve obstacles.
 The game is made up of 5 level and final level where you have to defeat the grand trotro.
@@ -17,8 +18,6 @@ The user has a total of 3 lives in any set of game session.
 ## Level Design
 The game is made up of 5 different preliminary levels where the player collects as much as stars.
 At each diffents level, the player will be a set of moving obstacles(flying birds) thrown at the player. Any contact with a flying bird will cause the player to lose one life.
-
-## Themes
 
 ## Story and Gameplay
 
