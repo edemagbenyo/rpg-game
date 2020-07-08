@@ -92,11 +92,6 @@ To contribute to the Sedemania Game, follow these steps:
 
 Alternatively, see the GitHub documentation on [creating a pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
 
-## Contributors
-
-Thanks to the following people who have contributed to this project:
-* [@edemagbenyo](https://github.com/edemagbenyo) 📖
-
 
 ## Contact
 
