@@ -10,19 +10,19 @@
 
 ## Overview
 [Sedemamia](https://sedemania.netlify.app/) is a single-player turn-based game. The game is intended to test how fast the player can think and swerve obstacles.
-The game is made up of 5 level and final level where you have to defeat the grand Trotro.
-In the first five levels, the user must collect as much as starts possible. The collected stars will be used in the fight with the grand Trotro at the end of the 3 lives. 
-Regardless of the number of stars collected, any player who exhausts all the 3 lives will be sent to face the grand Trotro.
+The game is made up of 3 level and final level where you have to defeat the Grand Trotro.
+In the first three levels, the user must collect as many stars as possible. The collected stars will be used in the fight with the grand Trotro at the end of the 3 lives. 
+Regardless of the number of stars collected, any player who exhausts all the 3 lives will be sent to face the Grand Trotro.
 The user has a total of 3 lives in any set of a game session. 
 
 ## Level Design
-The game is made up of 5 different preliminary levels where the player collects as much as stars.
+The game is made up of 3 different preliminary levels where the player collects as many stars.
 At each different level, the player will be a set of moving obstacles(flying birds) thrown at the player. Any contact with a flying bird will cause the player to lose one life.
 
 ## Story and Gameplay
 
 ### Story
-A player(Sedem) is on the quest to save the world from the tyrant grand Trotro(GT) who has brought darkness to the people of Seduland. To get to GT and restore brightness, Sedem needs to collect as much as possible ammunition for the fight. He must reach the 3rd level before he can get to fight GT. Collecting the stars is not as easy as it sounds as there are flying birds that are constantly blocking the way and trying to eat Sedem so he cannot get to GT and get a finish. To get to a superior level, Sedem must collect a minimum number of stars(the number doubles at each level).
+A player(Sedem) is on the quest to save the world from the tyrant Grand Trotro(GT) who has brought darkness to the people of Seduland. To get to GT and restore light, Sedem needs to collect many possible ammunitions for the fight. He must reach the 3rd level before he can get to fight GT. Collecting the stars is not as easy as it sounds as there are flying birds that are constantly blocking the way and trying to eat Sedem so he cannot get to GT and get a finish. To get to a superior level, Sedem must collect a minimum number of stars(the number doubles at each level).
 
 ### Gameplay
 Player uses the direction keys( up: to jump and move to upper blocks, down: to move down in a faster way, left: to move left, right: to move right).
@@ -38,10 +38,6 @@ GT can be killed if it has been hit by in the middle by 5 fires in 10 blocks or 
 
 ### Mechanics
 Mobility system: Player gets to move in all directions using the arrow keys. The UP and DOWN keys are exceptional, in the sense, the UP key makes the player jump, however, the down key helps the player to fall fast.
-Shooting system: Player and shoot a block or fire as long as they have the equivalent amount of stars.
-Scoring system: Player gets a point for collecting a start and for killing a bird you get 5 points.
-
-
 
 ## Assets
 
@@ -65,11 +61,10 @@ It will be played when the player moves to gt level
 Before you begin, ensure you have met the following requirements:
 <!--- These are just example requirements. Add, duplicate or remove as required --->
 * You have installed the latest version of `Node.js`
-* You have a `<Windows/Linux/Mac>` machine.
 
 ## Installing weather app
 
-To install the weather app, follow these steps:
+To install the Sedemania app, follow these steps:
 
 1. Clone the project
 ```
@@ -100,13 +95,19 @@ Alternatively, see the GitHub documentation on [creating a pull request](https:/
 ## Contributors
 
 Thanks to the following people who have contributed to this project:
-
 * [@edemagbenyo](https://github.com/edemagbenyo) 📖
 
 
 ## Contact
 
-If you want to contact me you can reach me at <edem.agbenyo@gmail.com>.
+* LinkedIn: [@edemagbenyo](https://www.linkedin.com/in/edemagbenyo/) 
+* Portfolio: [edemagbenyo.com](https://edemagbenyo.com) 
+* Email: [edem.agbenyo@gmail.com](mailto:edem.agbenyo@gmail.com)
+
+## Known issues or improvement
+1. Move player from one level to the other.
+2. Add a scene for the fight with the Grand Trotro.
+3. Give users access to log in and save their progress. 
 
 ## Credits
 
