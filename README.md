@@ -14,7 +14,7 @@ In the first three levels, the user must collect as many stars as possible. The 
 Regardless of the number of stars collected, any player who exhausts all the 3 lives will be sent to face the Grand Trotro.
 The user has a total of 3 lives in any set of a game session. 
 
-![Screenshot of the webpage](https://github.com/edemagbenyo/rpg-game/blob/implement-frontend/screenshots/screen.png)
+![Screenshot of the webpage](https://github.com/edemagbenyo/rpg-game/blob/develop/screenshots/screen.png)
 
 ## Level Design
 The game is made up of 3 different preliminary levels where the player collects as many stars.
