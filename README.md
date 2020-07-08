@@ -7,13 +7,14 @@
 ![GitHub forks](https://img.shields.io/github/forks/edemagbenyo/rpg-game?style=social)
 ![Twitter Follow](https://img.shields.io/twitter/follow/edemagbenyo?style=social)
 
-
 ## Overview
 [Sedemamia](https://sedemania.netlify.app/) is a single-player turn-based game. The game is intended to test how fast the player can think and swerve obstacles.
 The game is made up of 3 level and final level where you have to defeat the Grand Trotro.
 In the first three levels, the user must collect as many stars as possible. The collected stars will be used in the fight with the grand Trotro at the end of the 3 lives. 
 Regardless of the number of stars collected, any player who exhausts all the 3 lives will be sent to face the Grand Trotro.
 The user has a total of 3 lives in any set of a game session. 
+
+![Screenshot of the webpage](https://github.com/edemagbenyo/rpg-game/blob/implement-frontend/screenshots/screen.png)
 
 ## Level Design
 The game is made up of 3 different preliminary levels where the player collects as many stars.
