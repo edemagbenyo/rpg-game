@@ -9,9 +9,9 @@
 
 ## Overview
 [Sedemamia](https://sedemania.netlify.app/) is a single-player turn-based game. The game is intended to test how fast the player can think and swerve obstacles.
-The game is made up of 3 level and final level where you have to defeat the Grand Trotro.
+The game is made up of 3 levels and final level where you have to defeat the Grand Trotro.
 In the first three levels, the user must collect as many stars as possible. The collected stars will be used in the fight with the grand Trotro at the end of the 3 lives. 
-Regardless of the number of stars collected, any player who exhausts all the 3 lives will be sent to face the Grand Trotro.
+Regardless of the number of stars collected, a player who exhausts all 3 lives will be sent to face the Grand Trotro.
 The user has a total of 3 lives in any set of a game session. 
 
 ![Screenshot of the webpage](https://github.com/edemagbenyo/rpg-game/blob/develop/screenshots/screen.png)
@@ -23,7 +23,7 @@ At each different level, the player will be a set of moving obstacles(flying bir
 ## Story and Gameplay
 
 ### Story
-A player(Sedem) is on the quest to save the world from the tyrant Grand Trotro(GT) who has brought darkness to the people of Seduland. To get to GT and restore light, Sedem needs to collect many possible ammunitions for the fight. He must reach the 3rd level before he can get to fight GT. Collecting the stars is not as easy as it sounds as there are flying birds that are constantly blocking the way and trying to eat Sedem so he cannot get to GT and get a finish. To get to a superior level, Sedem must collect a minimum number of stars(the number doubles at each level).
+A player(Sedem) is on the quest to save the world from the tyrant Grand Trotro(GT) who has brought darkness to the people of Seduland. To get to GT and restore light, Sedem needs to collect many possible ammunitions for the fight. He must reach the 3rd level before he can get to fight GT. Collecting the stars is not as easy as it sounds, as there are flying birds that are constantly blocking the way and trying to eat Sedem so he cannot get to GT and get a finish. To get to a superior level, Sedem must collect a minimum number of stars(the number doubles at each level).
 
 ### Gameplay
 Player uses the direction keys( up: to jump and move to upper blocks, down: to move down in a faster way, left: to move left, right: to move right).
@@ -63,7 +63,7 @@ Before you begin, ensure you have met the following requirements:
 <!--- These are just example requirements. Add, duplicate or remove as required --->
 * You have installed the latest version of `Node.js`
 
-## Installing weather app
+## Installing Sedemania app
 
 To install the Sedemania app, follow these steps:
 
@@ -94,13 +94,12 @@ To contribute to the Sedemania Game, follow these steps:
 Alternatively, see the GitHub documentation on [creating a pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
 
 
-## Contact
-
-* LinkedIn: [@edemagbenyo](https://www.linkedin.com/in/edemagbenyo/) 
+## Author
+* LinkedIn: [Edem Agbenyo](https://www.linkedin.com/in/edemagbenyo/) 
 * Portfolio: [edemagbenyo.com](https://edemagbenyo.com) 
 * Email: [edem.agbenyo@gmail.com](mailto:edem.agbenyo@gmail.com)
 
-## Known issues or improvement
+## Future features
 1. Move player from one level to the other.
 2. Add a scene for the fight with the Grand Trotro.
 3. Give users access to log in and save their progress. 
