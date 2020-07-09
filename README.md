@@ -95,10 +95,10 @@ Alternatively, see the GitHub documentation on [creating a pull request](https:/
 
 
 ## Author
-* LinkedIn: [Edem Agbenyo](https://www.linkedin.com/in/edemagbenyo/) 
-* Portfolio: [edemagbenyo.com](https://edemagbenyo.com) 
-* Email: [edem.agbenyo@gmail.com](mailto:edem.agbenyo@gmail.com)
-
+- Github: [@edemagbenyo](https://github.com/edemagbenyo)
+- Twitter: [Edem Agbenyo](https://twitter.com/edemAgbenyo)
+- LinkedIn: [Edem Agbenyo](https://www.linkedin.com/in/edemagbenyo/)
+- Email : [edem.agbenyo@gmail.com](mailto:edem.agbenyo@gmail.com)
 ## Future features
 1. Move player from one level to the other.
 2. Add a scene for the fight with the Grand Trotro.
